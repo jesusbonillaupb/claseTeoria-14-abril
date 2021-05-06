@@ -1,0 +1,11 @@
+def cedula(numero):
+    numerostr=str(num)
+    numingresado=(len(numerostr))
+    if numingresado==10:
+        valida=True
+    else:
+        valida=False
+    return valida
+print("para que la cedula sea valida debe tener 10 digitos")
+num=int(input("ingrese su numero de cedula: "))
+print(cedula(num))
