@@ -1,0 +1,38 @@
+#original
+def sumaDigitos(numero):
+    suma=0
+    while numero!=0:
+        digito=numero%10
+        suma=suma+digito
+        numero=numero//10
+    return suma
+    
+sumatoria=0
+num=int(input("Número a procesar: "))
+while num!=0:
+    print("Suma:",sumaDigitos(num))
+    sumatoria=sumatoria+num
+    num=int(input("Número a procesar: "))
+print("Sumatoria:", sumatoria)
+print("Dígitos:", sumaDigitos(sumatoria))
+#alternativa
+ALTERNATIVA 1
+def sumaDigitos(numero):
+    suma = 0
+    while numero != 0:
+        digito = numero % 10
+        suma = suma + digito
+        numero = numero // 10
+    return suma
+
+
+while True:
+    num = int(input("Número a procesar: "))
+    if num !=0:
+        print("Suma:", sumaDigitos(num))
+        numcadena = str(num)
+        print("digitos",len(numcadena))
+    else:
+        print("programa terminado")
+        break
+
