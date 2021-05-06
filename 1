@@ -1,0 +1,24 @@
+#original
+    caracterBuscado="@"
+    emailValido=False
+    for c in email:
+        if c==caracterBuscado:
+            return True
+    return False
+
+ 
+direccion=input("Tu email: ")
+if validar(direccion):
+    print("Dirección válida")
+else:
+    print("Dirección inválida")
+#alternativa
+email = input("ingresa tu email: ")
+def validar(email):
+    if email.find("@" and (".com" or ".co")) >= 0:
+        print("valido")
+    else:
+        print("invalido")
+
+
+validar(email)
